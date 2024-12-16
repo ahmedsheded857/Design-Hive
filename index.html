@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/489ad34ef4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <!-- Logo Section -->
+            <div class="logo">
+                <a href="#"><span>D</span>esign <span>H</span>ive</a>
+            </div>
+            
+            <!-- Navigation -->
+            <nav>
+                <ul id="menu"> <!-- إضافة id menu هنا -->
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i> <!-- إغلاق القائمة -->
+                </ul>
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i> <!-- أيقونة الهامبرغر -->
+            </nav>
+            
+            <!-- Header Text -->
+            <div class="header-text">
+                <h3><span class="typing">Web & Mobile Designer</span></h3>
+                <h1>Welcome to <span>Design Hive</span></h1>
+                <p>Your gateway to creativity and innovation!</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ------------------------------------------about-------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-2">
+                    <h1 class="sub-title">عن شركتنا</h1>
+                    <p>في Design Hive، نؤمن بأن الابتكار هو سبب التميز،  لذلك نقدم حلولاً متكاملة في ثلاثة مجالات أساسية: تطوير المواقع الإلكترونية، تطوير تطبيقات الهواتف المحمولة، وتصميم الجرافيك، نسعى دائمًا لتقديم تجارب رقمية إستثنائية تساعد عملائنا في بناء هوية مميزه خاصه بالبراند لجذب الجمهور المستهدف و تحقيق أهدافهم التجارية.</p>
+                    <p>فريقنا المتخصص يعمل بكل الجهد و التفانين لتقديم أفضل الحلول التكنولوجية التي تجمع بين الإبداع والكفاءة، ذلك من خلال تصميم واجهات مبتكرة للمستخدم ، وتطوير تطبيقات الهواتف ذكية، وتصميم جرافيكي متفرد.</p>
+                    <p>عملاؤنا هم شركائنا في النجاح. لذلك نلتزم بتقديم حلول متفرده وخاصه لكل براند ، لتواكب تطلعاته وتحقق له التميز في السوق.
+                        سواء كنت بحاجة إلى موقع ويب حديث ومتجاوب، أو تطبيق هاتف مبتكر، أو هوية بصرية مميزة، نحن هنا لتحقيق رؤيتك وجعلها واقعًا ملموسًا.</p>
+                  
+                        <div class="company-vision">
+                        <h2>رؤيتنا</h2>
+                        <p>نسعى لأن نكون الشركة الرائدة في تقديم حلول رقمية مبتكرة تساهم في تعزيز النمو المستدام لعملائنا وتساعدهم في التفوق في السوق.</p>
+                        <h2>رسالتنا</h2>
+                        <p>نهدف إلى تقديم خدمات عالية الجودة في مجال تطوير المواقع الإلكترونية وتطبيقات الهواتف المحمولة، مع التركيز على الابتكار والتميز في كل مشروع.</p>
+                    </div>
+    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">مهاراتنا</p>
+                        <p class="tab-links" onclick="opentab('expirience')">خبراتنا</p>
+                        <p class="tab-links" onclick="opentab('portfolio')">أعمالنا</p>
+                    </div>
+    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>تطوير المواقع الإلكترونية</span><br>نحن متخصصون في تصميم وتطوير مواقع ويب مبتكرة ومتجاوبة، تعمل بشكل مثالي على جميع الأجهزة وتتميز بتجربة مستخدم سلسة.</li>
+                            <li><span>تطوير تطبيقات الهواتف المحمولة</span><br>نقدم حلولاً متكاملة لتطوير تطبيقات موبايل مخصصة لأنظمة Android و iOS، مع تركيز على تجربة مستخدم متميزة وأداء عالٍ.</li>
+                            <li><span>تصميم الجرافيك</span><br>نصمم هويات بصرية استثنائية تشمل الشعارات، البروشورات، والمواد الدعائية التي تعكس هوية علامتك التجارية وتجذب انتباه جمهورك المستهدف.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="expirience">
+                        <ul>
+                            <li><span>2022 - الآن</span><br>تقديم حلول تطوير الويب وتطبيقات الهواتف المحمولة للشركات الرائدة في السوق.</li>
+                            <li><span>2021 - 2022</span><br>مطور ويب في شركة عالمية، حيث قمت بتطوير مواقع مبتكرة تعتمد على أحدث تقنيات الويب.</li>
+                            <li><span>2020 - 2021</span><br>تدريب في تصميم الجرافيك لشركة معروفة في مجال التجارة الإلكترونية.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="portfolio">
+                        <ul>
+                            <li><span>مشروع 1</span><br>تطوير موقع ويب لمؤسسة تجارية، حيث قمنا بتصميم وتطوير الموقع بشكل مبتكر مع تجربة مستخدم استثنائية.</li>
+                            <li><span>مشروع 2</span><br>تطوير تطبيق موبايل لإدارة الأعمال التجارية، حيث تم دمج تقنيات متقدمة لتوفير تجربة مستخدم ممتازة على كل من Android و iOS.</li>
+                            <li><span>مشروع 3</span><br>تصميم هوية بصرية كاملة لعلامة تجارية، بما في ذلك الشعار، الموقع الإلكتروني، ومواد التسويق.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+       <!-- -----------------------portfolio----------------------------------- -->
+   <!-- SECTION NO 5 -->
+<section id="my-portfolio" class="container-fluid section-5 py-5">
+    <div class="row">
+        <div class="col">
+            <div class="section-5-text text-center mx-auto">
+                <h2 class="text-uppercase fw-bold">We Design People Inspired Experiences</h2>
+              
+            </div>
+            <div class="section-5-icon text-center mt-4">
+                <a href="#portfolio-gallery" class="scroll-link">
+                    <i class="bi bi-chevron-double-down sec5-icon"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col text-center">
+            <div class="sec5-portfolio-head">
+                <h3 class="fw-bold">View Portfolio</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section for Portfolio Gallery -->
+<section id="portfolio-gallery" class="container-fluid py-5">
+    <!-- Add your portfolio content here -->
+</section>
+
+
+    <!-- أزرار اختيار الفئة -->
+    <div class="category-btns">
+        <button class="category-btn" onclick="showCategory('web')">تصميم الويب</button>
+        <button class="category-btn" onclick="showCategory('graphic')">تصميم الجرافيك</button>
+        <button class="category-btn" onclick="showCategory('mobile')">تطبيقات الموبايل</button>
+    </div>
+
+  <!-- مشاريع الويب -->
+<div id="web" class="projects-container">
+    <div class="project-card">
+        <a href="https://ahmedsheded857.github.io/King-of-Spices/">
+            <h3>مشروع ويب 1</h3>
+            <img src="./images/web/restaurent2.PNG" alt="مشروع ويب 1">
+        </a>
+    </div>
+    <div class="project-card">
+        <a href="https://ahmedsheded857.github.io/InteriorWebsite-master/">
+            <h3>مشروع ويب 2</h3>
+            <img src="./images/web/2430a081-e704-4da5-91c1-53034ac25ea1.png" alt="مشروع ويب 2">
+        </a>
+    </div>
+    <div class="project-card">
+        <a href="https://ahmedsheded857.github.io/CodingSchool/">
+            <h3>مشروع ويب 3</h3>
+            <img src="./images/web/codingschool.PNG" alt="مشروع ويب 3">
+        </a>
+    </div>
+    <div class="project-card">
+        <a href="https://ahmedsheded857.github.io/RainyRoof_Restaurant/">
+            <h3>مشروع ويب 4</h3>
+            <img src="./images/web/restaurant.PNG" alt="مشروع ويب 4">
+        </a>
+    </div>
+    <div class="project-card">
+        <a href="https://ahmedsheded857.github.io/E-Commerce/">
+            <h3>مشروع ويب 5</h3>
+            <img src="./images/web/E-Commerce-website.PNG " alt="مشروع ويب 5">
+        </a>
+    </div>
+    <div class="project-card">
+        <a href="https://ahmedsheded857.github.io/foodhub-restaurant-website/">
+            <h3>مشروع ويب 6</h3>
+            <img src="./images/web/foodhub-restaurant-website.png" alt="مشروع ويب 6">
+        </a>
+    </div>
+    <div class="project-card">
+        <a href="https://ahmedsheded857.github.io/Islami/">
+            <h3>مشروع ويب 7</h3>
+            <img src="./images/web/islami.PNG" alt="مشروع ويب 7">
+        </a>
+    </div>
+    <div class="project-card">
+        <a href="https://ahmedsheded857.github.io/Online-Bookstore/">
+            <h3>مشروع ويب 8</h3>
+            <img src="./images/web/Online-Bookstore.png" alt="مشروع ويب 8">
+        </a>
+    </div>
+    <div class="project-card">
+        <a href="https://ahmedsheded857.github.io/ahadith/">
+            <h3>مشروع ويب 9</h3>
+            <img src="./images/web/014657bc-705e-464d-a3f8-231650218416.jfif" alt="مشروع ويب 9">
+        </a>
+    </div>
+    <div class="project-card">
+        <a href="https://ahmedsheded857.github.io/dawarha/">
+            <h3>مشروع ويب 10</h3>
+            <img src="./images/web/dawarha.PNG" alt="مشروع ويب 10">
+        </a>
+    </div>
+    <div class="project-card">
+        <a href="https://techno-media-portfolio.vercel.app/">
+            <h3>مشروع ويب 11</h3>
+            <img src="./images/web/techno media.PNG" alt="مشروع ويب 11">
+        </a>
+    </div>
+    <div class="project-card">
+        <a href="https://ahmedsheded857.github.io/vision/">
+            <h3>مشروع ويب 12</h3>
+            <img src="./images/web/Capture.PNG" alt="مشروع ويب 12">
+        </a>
+    </div>
+</div>
+
+
+
+<!-- مشاريع الجرافيك -->
+<div id="graphic" class="projects-container" style="display:none;">
+    <div class="project-card">
+        <!-- الصورة الأساسية للمشروع مع رابط Fancybox -->
+        <a href="./images/graphics/Arrow/25.jpg" data-fancybox="project1" data-caption="تصميم جرافيك 1">
+            <img src="./images/graphics/Arrow/25.jpg" alt="تصميم جرافيك 1">
+        </a>
+        <a href="./images/graphics/Arrow/arrow-23---15.jpg" data-fancybox="project1"></a>
+        <a href="./images/graphics/Arrow/arrow-23---16.jpg" data-fancybox="project1"></a>
+        <a href="./images/graphics/Arrow/arrow-24---1.jpg" data-fancybox="project1"></a>
+        <a href="./images/graphics/Arrow/arrow-24---15.jpg" data-fancybox="project1"></a>
+        <a href="./images/graphics/Arrow/arrow-24---7.jpg" data-fancybox="project1"></a>
+        <a href="./images/graphics/Arrow/arrow-27---4.jpg" data-fancybox="project1"></a>
+    </div>
+    <div class="project-card">
+        <a href="./images/graphics/Golden dental clinic/dental---1.jpg" data-fancybox="project2" data-caption="تصميم جرافيك 2">
+            <img src="./images/graphics/Golden dental clinic/dental---1.jpg" alt="تصميم جرافيك 2">
+        </a>
+        <a href="./images/graphics/Golden dental clinic/dental-2.jpg" data-fancybox="project2"></a>
+        <a href="./images/graphics/Golden dental clinic/dental-8.jpg" data-fancybox="project2"></a>
+        <a href="./images/graphics/Golden dental clinic/dental-9.jpg" data-fancybox="project2"></a>
+    </div>
+    <div class="project-card">
+        <a href="./images/graphics/Magnet/3-(calendar)---22.jpg" data-fancybox="project3" data-caption="تصميم جرافيك 3">
+            <img src="./images/graphics/Magnet/3-(calendar)---22.jpg" alt="تصميم جرافيك 3">
+        </a>
+        <a href="./images/graphics/Magnet/4-(calendar).jpg" data-fancybox="project3"></a>
+        <a href="./images/graphics/Magnet/5-(calendar).jpg" data-fancybox="project3"></a>
+        <a href="./images/graphics/Magnet/7-(calendar)---2.jpg" data-fancybox="project3"></a>
+        <a href="./images/graphics/Magnet/8-(calendar)---5.jpg" data-fancybox="project3"></a>
+        <a href="./images/graphics/Magnet/9-(calendar).jpg" data-fancybox="project3"></a>
+        <a href="./images/graphics/Magnet/eid---2.jpg" data-fancybox="project3"></a>
+        <a href="./images/graphics/Magnet/eid---3.jpg" data-fancybox="project3"></a>
+    </div>
+    <div class="project-card">
+        <a href="./images/graphics/Mobi joy/3.jpg" data-fancybox="project4" data-caption="تصميم جرافيك 4">
+            <img src="./images/graphics/Mobi joy/3.jpg" alt="تصميم جرافيك 4">
+        </a>
+        <a href="./images/graphics/Mobi joy/4.jpg" data-fancybox="project4"></a>
+        <a href="./images/graphics/Mobi joy/Mobi-joy---2.jpg" data-fancybox="project4"></a>
+    </div>
+    <div class="project-card">
+        <a href="./images/graphics/MOCHI DOUNT/1---1.jpg" data-fancybox="project5" data-caption="تصميم جرافيك 5">
+            <img src="./images/graphics/MOCHI DOUNT/1---1.jpg" alt="تصميم جرافيك 5">
+        </a>
+        <a href="./images/graphics/MOCHI DOUNT/3.jpg" data-fancybox="project5"></a>
+        <a href="./images/graphics/MOCHI DOUNT/5.jpg" data-fancybox="project5"></a>
+        <a href="./images/graphics/MOCHI DOUNT/6---1.jpg" data-fancybox="project5"></a>
+        <a href="./images/graphics/MOCHI DOUNT/6.jpg" data-fancybox="project5"></a>
+    </div>
+    <div class="project-card">
+        <a href="./images/graphics/oody tal/woody---1---v22.jpg" data-fancybox="project6" data-caption="تصميم جرافيك 6">
+            <img src="./images/graphics/oody tal/woody---1---v22.jpg" alt="تصميم جرافيك 6">
+        </a>
+        <a href="./images/graphics/oody tal/woody---10.png" data-fancybox="project6"></a>
+        <a href="./images/graphics/oody tal/woody---11.png" data-fancybox="project6"></a>
+        <a href=".//images/graphics/oody tal/woody---12.png" data-fancybox="project6"></a>
+        <a href="./images/graphics/oody tal/woody---2---v2.jpg" data-fancybox="project6"></a>
+        <a href="./images/graphics/oody tal/woody---4.jpg" data-fancybox="project6"></a>
+        <a href="./images/graphics/oody tal/woody---5.jpg" data-fancybox="project6"></a>
+        <a href="./images/graphics/oody tal/woody---6.jpg" data-fancybox="project6"></a>
+        <a href="./images/graphics/oody tal/woody---8.png" data-fancybox="project6"></a>
+        <a href="./images/graphics/oody tal/woody---9.png" data-fancybox="project6"></a>
+    </div>
+   
+   
+    <div class="project-card">
+        <a href="./images/graphics/PRINTLY/1.jpg" data-fancybox="project9" data-caption="تصميم جرافيك 9">
+            <img src="./images/graphics/PRINTLY/1.jpg" alt="تصميم جرافيك 9">
+        </a>
+        <a href="./images/graphics/PRINTLY/2.jpg" data-fancybox="project9"></a>
+        <a href="./images/graphics/PRINTLY/3.jpg" data-fancybox="project9"></a>
+    </div>
+    <div class="project-card">
+        <a href="./images/graphics/برجنيرز/4.jpg" data-fancybox="project10" data-caption="تصميم جرافيك 10">
+            <img src="./images/graphics/برجنيرز/4.jpg" alt="تصميم جرافيك 10">
+        </a>
+        <a href="./images/graphics/برجنيرز/5.jpg" data-fancybox="project10"></a>
+        <a href="./images/graphics/برجنيرز/6.jpg" data-fancybox="project10"></a>
+    </div>
+    <div class="project-card">
+        <a href="./images/graphics/BM Pharma & Fitmiss/2.jpg" data-fancybox="project11" data-caption="تصميم جرافيك 11">
+            <img src="./images/graphics/BM Pharma & Fitmiss/2.jpg" alt="تصميم جرافيك 11">
+        </a>
+        <a href="./images/graphics/BM Pharma & Fitmiss/3.jpg" data-fancybox="project11"></a>
+        <a href="./images/graphics/BM Pharma & Fitmiss/fitmiss 1.jpg" data-fancybox="project11"></a>
+        <a href="./images/graphics/BM Pharma & Fitmiss/fitmiss 6.jpg" data-fancybox="project11"></a>
+        <a href="./images/graphics/BM Pharma & Fitmiss/fitmiss 9.jpg" data-fancybox="project11"></a>
+        <a href="./images/graphics/BM Pharma & Fitmiss/شيبترنا-2.jpg" data-fancybox="project11"></a>
+        <a href="./images/graphics/BM Pharma & Fitmiss/شيبترنا-3.jpg" data-fancybox="project11"></a>
+    </div>
+    <div class="project-card">
+        <a href="./images/graphics/Fat Shark/شارك-1.png" data-fancybox="project12" data-caption="تصميم جرافيك 12">
+            <img src="./images/graphics/Fat Shark/شارك-1.png" alt="تصميم جرافيك 12">
+        </a>
+        <a href="./images/graphics/Fat Shark/شارك-11.png" data-fancybox="project12"></a>
+        <a href="./images/graphics/Fat Shark/شارك-2.png" data-fancybox="project12"></a>
+        <a href="./images/graphics/Fat Shark/شارك-22.png" data-fancybox="project12"></a>
+        <a href="./images/graphics/Fat Shark/شارك-3.png" data-fancybox="project12"></a>
+        <a href="./images/graphics/Fat Shark/شارك-33.png" data-fancybox="project12"></a>
+    </div>
+
+  
+    <div class="project-card">
+        <a href="./images/graphics/ميديستا/Layer 10.png" data-fancybox="project16" data-caption="تصميم جرافيك 16">
+            <img src="./images/graphics/ميديستا/Layer 10.png" alt="تصميم جرافيك 16">
+        </a>
+        <a href="./images/graphics/ميديستا/Layer 11.png" data-fancybox="project16"></a>
+        <a href="./images/graphics/ميديستا/Layer 7.png" data-fancybox="project16"></a>
+        <a href="./images/graphics/ميديستا/Layer 8.png" data-fancybox="project16"></a>
+        <a href="./images/graphics/ميديستا/Layer 9.png" data-fancybox="project16"></a>
+        <a href="./images/graphics/ميديستا/بربلاوي-كتاب---33.png" data-fancybox="project16"></a>
+        <a href="./images/graphics/ميديستا/بربلاوي-كتاب---5.png" data-fancybox="project16"></a>
+    </div>
+    <div class="project-card">
+        <a href="./images/graphics/هيلثيفوليو/3acfab185385571.65633e4e3879b.jpg" data-fancybox="project17" data-caption="تصميم جرافيك 17">
+            <img src="./images/graphics/هيلثيفوليو/3acfab185385571.65633e4e3879b.jpg" alt="تصميم جرافيك 17">
+        </a>
+        <a href="./images/graphics/هيلثيفوليو/6c4bb6185385571.65633e4e3d82b.png" data-fancybox="project17"></a>
+        <a href="./images/graphics/هيلثيفوليو/730d50185385571.65633e4e3695c.jpg" data-fancybox="project17"></a>
+        <a href="./images/graphics/هيلثيفوليو/7e6dc2185385571.65633e4e4184a.jpg" data-fancybox="project17"></a>
+        <a href="./images/graphics/هيلثيفوليو/947efe185385571.65633e4e4094e.jpg" data-fancybox="project17"></a>
+        <a href="./images/graphics/هيلثيفوليو/991179185385571.65633e4e3f124.jpg" data-fancybox="project17"></a>
+        <a href="./images/graphics/هيلثيفوليو/a8e88c185385571.65633e4e35bf7.jpg" data-fancybox="project17"></a>
+        <a href="./images/graphics/هيلثيفوليو/b7333e185385571.65633e4e3fd0f.png" data-fancybox="project17"></a>
+        <a href="./images/graphics/هيلثيفوليو/f576cf185385571.65633e4e37cb4.png" data-fancybox="project17"></a>
+    </div>
+    <div class="project-card">
+        <a href="./images/graphics/Seazar plus/سيزار-1.png" data-fancybox="project18" data-caption="تصميم جرافيك 18">
+            <img src="./images/graphics/Seazar plus/سيزار-1.png" alt="تصميم جرافيك 18">
+        </a>
+        <a href="./images/graphics/Seazar plus/سيزار-3.jpg" data-fancybox="project18"></a>
+        <a href="./images/graphics/Seazar plus/سيزار-3.png" data-fancybox="project18"></a>
+        <a href="./images/graphics/Seazar plus/سيزار-6.jpg" data-fancybox="project18"></a>
+    </div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+    <!-- مشاريع الموبايل -->
+    <div id="mobile" class="projects-container" style="display:none;">
+        <div class="project-card">
+            <img src="./H (2).png" alt="تطبيق موبايل 1">
+        </div>
+        <div class="project-card">
+            <img src="./H (2).png" alt="تطبيق موبايل 2">
+        </div>
+    </div>
+
+
+
+    <!-- ----------------------------------services--------------------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">خدماتنا</h1>
+            <div class="services-list">
+                <!-- خدمة تصميم المواقع -->
+                <div class="service-item">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>تصميم مواقع الإنترنت</h2>
+                    <p>
+                        نقدم خدمة تصميم مواقع الويب بشكل احترافي ومميز، مع مراعاة متطلبات السوق وأهداف عملك.  
+                        • تصميم مواقع متجاوبة (Responsive) تعمل على جميع الأجهزة.  
+                        • تحسين سرعة الأداء لتوفير تجربة مستخدم ممتازة.  
+                        • دعم لتحسين محركات البحث (SEO) لزيادة ظهور موقعك في نتائج البحث.  
+                        • دمج أحدث الأدوات التكنولوجية لضمان التميز.  
+                    </p>
+                    
+                </div>
+    
+                <!-- خدمة تصميم الجرافيك -->
+                <div class="service-item">
+                    <i class="fa-solid fa-paint-brush"></i>
+                    <h2>تصميم الجرافيك</h2>
+                    <p>
+                        نقدم حلولًا مبتكرة في تصميم الجرافيك تلبي احتياجات عملك وتعكس رؤيتك.  
+                        • تصميم شعارات مخصصة (Logos) تناسب هوية شركتك.  
+                        • تصميم منشورات السوشيال ميديا بأسلوب إبداعي.  
+                        • إعداد هويات بصرية كاملة تشمل الألوان والخطوط والعناصر البصرية.  
+                        • تصميم كتيبات وإعلانات مطبوعة بأعلى جودة.  
+                    </p>
+                    
+                </div>
+    
+                <!-- خدمة تطبيقات الهواتف -->
+                <div class="service-item">
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>تطوير تطبيقات الهواتف</h2>
+                    <p>
+                        نساعدك على دخول عالم الهواتف الذكية من خلال تطبيقات مبتكرة وسهلة الاستخدام.  
+                        • تصميم تطبيقات أصلية (Native) تعمل على أنظمة Android وiOS.  
+                        • تطوير تطبيقات هجينة (Hybrid) باستخدام أحدث الأدوات التقنية.  
+                        • ضمان تجربة مستخدم (UX) سلسة وتصميم واجهة (UI) مميزة.  
+                        • تحسين أمان التطبيقات لضمان حماية بيانات العملاء.  
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+ 
+
+
+    <!-- --------------------------------contact-------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <a href="mailto:designhive43@gmail.com?subject=Hello&body=This%20is%20a%20test%20email">
+                        <p><i class="fa-sharp fa-solid fa-paper-plane"></i> designhive43@gmail.com</p>
+                    </a>
+    
+                    <a href="https://wa.me/201501715559" target="_blank">
+                        <p><i class="fa-solid fa-square-phone"></i> 01501715559</p>
+                    </a>
+    
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61568146570674&mibextid=LQQJ4d" class="facebook" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/design80996" class="twitter" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/design_hive_3?igsh=OGQ5ZDc2ODk2ZA==" class="instagram" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/design-hive-3/" class="linkedin" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+    
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+        <div class="copyright">
+            <p>Copyright &copy;  All rights are reserved! </p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    <script src="backend.js"></script>
+</body>
+
+</html>
+
+
+
+
+
