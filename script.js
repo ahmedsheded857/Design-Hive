@@ -49,3 +49,38 @@ Fancybox.bind("[data-fancybox]", {
         display: ["zoom", "slideShow", "fullScreen", "close"],
     },
 });
+
+
+
+function loadCSS(href) {
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = href;
+
+    link.media = 'only x';
+    link.onload = function() {
+     
+      link.media = 'all';
+    };
+    document.head.appendChild(link);
+  }
+
+  
+  function loadScript(src, callback) {
+    var script = document.createElement('script');
+    script.src = src;
+    script.async = true;
+    script.onload = function() {
+      if (callback) callback();
+    };
+    document.body.appendChild(script);
+  }
+  
+
+ 
+loadCSS('./style.css');
+
+
+loadScript('./script.js', function() {
+  console.log('تم تحميل script.js بنجاح');
+});
